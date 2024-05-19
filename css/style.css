@@ -1,4 +1,26 @@
 @charset "UTF-8";
+.u-margin-topBottom {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-mid {
+  margin-bottom: 4rem;
+}
+
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 *,
 *::after,
 *::before {
@@ -82,15 +104,6 @@ input {
 }
 input[type=submit] {
   font-size: inherit;
-}
-
-.u-margin-topBottom {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.u-margin-bottom-4 {
-  margin-bottom: 4rem;
 }
 
 .btn {
@@ -196,11 +209,27 @@ form a {
   margin-right: 1rem;
 }
 
+.project-row:hover .project-text-box:not(:hover) {
+  transform: scale(0.95);
+}
+
 .project-text-box {
+  position: relative;
   background-color: #332391;
   padding: 3rem 3.5rem 2.8rem;
   border-bottom: 1rem solid #B7B3FF;
   text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  transition: all 0.2s;
+}
+.project-text-box:hover {
+  top: -1rem;
+  transform: scale(1.1);
+  box-shadow: 0 0.7rem 1.2rem rgba(0, 0, 0, 0.7);
+  border-color: #6EA6FF;
+}
+.project-text-box:hover h3 {
+  color: #6EA6FF;
 }
 .project-text-box .project-beschreibung {
   margin-bottom: 3rem;
