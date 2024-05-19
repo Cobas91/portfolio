@@ -1,0 +1,22 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+@use '../base/utilities' as utilities;
+
+.skill-liste-punkt {
+    img {
+        height: 25px;
+        width: auto;
+        display: inline-block;
+        margin-right: 1rem;
+
+    }
+}
+
+.kontakt-box {
+    img {
+        height: 40px;
+        width: auto;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}

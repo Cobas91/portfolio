@@ -1,0 +1,48 @@
+@use '../abstract/variables' as variables;
+@use '../abstract/mixins' as mixins;
+
+.row {
+    margin: 0 auto;
+
+
+    &:not(:last-child) {
+        margin-bottom: variables.$gutter-vertical;
+    }
+
+    @include mixins.flexBox;
+
+
+    [class^="div-"] {
+     
+        &:not(:last-child) {
+            margin-right: variables.$gutter-horizontal;
+        }
+    }
+
+
+    .div-1v2 {
+        width: calc((100% - #{variables.$gutter-horizontal}) / 2); // Man muss die SASS-Variable mit #{} umwickeln, damit die CSS-Funktion funktioniert.
+    }
+
+    .div-1v3 {
+        width: calc((100% - 2 * #{variables.$gutter-horizontal}) / 3); // Bei drei Spalten gibt es den Abstand zweimal. Deshalb muss dieser auch zweimal berücksichtigt werden. Sonst wäre der Abstand kleiner als bei der Zweier-Spalte.   
+    }
+
+    .div-2v3 {
+        width: calc(2 * ((100% - 2 * #{variables.$gutter-horizontal}) / 3) + #{variables.$gutter-horizontal}); // Diese Spalte nimmt den Platz von zwei Drittel-Spalten ein plus den Abstand zwischen den Drittelspalten.   
+    }
+
+    .div-1v4 {
+        width: calc((100% - 3 * #{variables.$gutter-horizontal}) / 4);
+    }
+
+    .div-2v4 {
+        width: calc(2 * ((100% - 3 * #{variables.$gutter-horizontal}) / 4) + #{variables.$gutter-horizontal} );
+    }
+
+    .div-3v4 {
+        width: calc(3 * ((100% - 3 * #{variables.$gutter-horizontal}) / 4) + 2 * #{variables.$gutter-horizontal} );
+    }
+
+
+}

@@ -1,0 +1,19 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+@use '../base/utilities' as utilities;
+
+
+.btn {
+    text-align: center;
+    border-radius: 3rem;
+    padding: .8rem 2rem 1rem 2rem;
+}
+
+.btn--border {
+    border: 2px solid variables.$button-color;
+    text-align: center;
+}
+
+.btn--filled {
+    background-color: variables.$button-color;
+}

@@ -1,0 +1,24 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+@use '../base/utilities' as utilities;
+
+.project-text-box {
+    background-color: variables.$main-color-dark;
+    padding: 3rem 3.5rem 2.8rem;
+    border-bottom: 1rem solid variables.$highlight-color;
+    text-align: center;
+
+
+    .project-beschreibung {
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    .project-knownledge {
+        color: variables.$highlight-color;
+        margin-top: 3rem;
+        text-align: left;
+    }
+    
+
+}

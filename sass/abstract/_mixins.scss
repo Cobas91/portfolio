@@ -1,0 +1,25 @@
+@use '../abstract/variables' as variables;
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin flexBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+@mixin formFocus {
+    border-radius: 0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    outline: 0;
+    border: 2px solid variables.$second-color-light;
+}
