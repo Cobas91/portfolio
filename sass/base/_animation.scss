@@ -1,0 +1,21 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+@use '../base/utilities' as utilities;
+
+// Mouse Cursor
+
+
+
+body {
+    cursor: none;
+}
+
+
+.custom-cursor {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        background-color: #fff;
+        border-radius: 50%;
+        pointer-events: none;
+}
