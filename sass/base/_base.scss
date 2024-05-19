@@ -1,0 +1,32 @@
+@use '../abstract/variables' as variables;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // Definition was 1rem ist
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: variables.$body-color;
+}
+
+.header, .main-content, .footer {
+    max-width: variables.$grid-width;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}

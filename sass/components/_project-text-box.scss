@@ -1,0 +1,43 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+@use '../base/utilities' as utilities;
+
+
+.project-row:hover .project-text-box:not(:hover) {
+    transform: scale(0.95);
+    
+}
+
+.project-text-box {
+    position: relative;
+    background-color: variables.$main-color-dark;
+    padding: 3rem 3.5rem 2.8rem;
+    border-bottom: 1rem solid variables.$highlight-color;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(#000, 0.7);
+    transition: all .2s;
+
+    &:hover {
+        top: -1rem;
+        transform: scale(1.1);
+        box-shadow: 0 .7rem 1.2rem rgba(#000, 0.7);
+        border-color: variables.$second-color-light;
+
+        h3 {
+            color: variables.$second-color-light;
+        }
+    }
+
+    .project-beschreibung {
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    .project-knownledge {
+        color: variables.$highlight-color;
+        margin-top: 3rem;
+        text-align: left;
+    }
+    
+
+}

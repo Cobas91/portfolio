@@ -1,0 +1,18 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+@use '../base/utilities' as utilities;
+
+
+.main-content div[class$="box"] {
+    margin-bottom: 12rem;
+}
+
+.about-box {
+    align-items: center;
+}
+
+.kontakt-text {
+    p {
+        margin-bottom: 3rem;;
+    }
+}

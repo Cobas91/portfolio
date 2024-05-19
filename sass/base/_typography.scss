@@ -1,0 +1,70 @@
+@use '../abstract/variables' as variables;
+
+// Main FONT
+
+@font-face {
+    font-family: "Roboto Mono";
+    src:
+      url("../../font/RobotoMono-Bold.woff2") format("woff2");
+  };
+
+
+
+body {
+    font-family: variables.$main-font, monospace;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: variables.$typo-color;
+}
+
+a {
+    color: variables.$typo-color;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: variables.$main-color-light;
+    font-size: 18rem;
+}
+
+h2 {
+    color: variables.$second-color-light;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    color: variables.$highlight-color;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.header {
+
+    &__logo {
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+
+}
+
+
+.skills-box, .project-box {
+    h2 {
+        text-align: center;
+    }
+}
+
+input {
+    font-family: variables.$main-font, monospace;
+
+    &[type=submit] {
+        font-size: inherit;
+    }
+}

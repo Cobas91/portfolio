@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Stephan Gärtner</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div id="header__logo" class="header__logo">
+            <span>Stephan Gärtner</span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-menu">
+                <li class="nav-menu-punkt"><a href="#about" class="nav-menu-link">About</a></li>
+                <li class="nav-menu-punkt"><a href="#skills" class="nav-menu-link">Skills</a></li>
+                <li class="nav-menu-punkt"><a href="#projects" class="nav-menu-link">Projects</a></li>
+                <li class="nav-menu-punkt"><a href="#contact" class="nav-menu-link">Get in touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content u-margin-topBottom">
+        <div class="row hero-box">
+            <div class="hero-img div-1v3">
+                <img src="./img/sg_illustration_profil.png" alt="Illustration Stephan Cobas">
+            </div>
+            <div class="hero-text div-2v3">
+                <h1>Hey!</h1>
+                <p> Ich bin Stephan Gärtner, leidenschaftlicher Softwareentwickler und Gamer aus Elmshorn.<br>
+                    Hier kommen dann noch mindestens zwei weitere Zeilen hin, die dich gut beschreiben und 
+                    sympathisch sind. Es sollten aber nicht zu viele sein, die Leute wollen sich das ja schnell durchlesen.
+                </p>
+            </div>
+        </div>
+
+        <div class="row about-box" id="about">
+            <div class="about-text div-1v2">
+                <h2>Was mich ausmacht</h2>
+                <p> Details über dich, eben der „About me“- Bereich<br>
+                    Hier kommen dann noch mindestens zwei Absätze hin, die dich gut beschreiben und sympathisch sind. 
+                    Da sollte alles rein, was dich als Mensch ausmacht und wie du zu dem Beruf gekommen bist. 
+                    Alles was du in der Einleitung noch nicht gesagt hast.
+                </p>
+                <p>
+                    Hier ist noch so ein Absatz. Sei kreativ. Du kannst auch ChatGPT den Text schreiben lassen. 
+                    Würde ich vermutlich so machen. Schreiben ist schließlich schon ätzend.
+                </p>
+            </div>
+            <div class="about-img div-1v2">
+                <img src="./img/sg_illustration_tastatur_maus.png" alt="Illustration Tastatur und Maus">
+            </div>
+        </div>
+        <div class="skills-box" id="skills">
+            <h2>Meine Skills</h2>
+            <div class="row">
+                <div class="div-1v4">
+                    <h3>Frontend</h3>
+                    <ul class="skill-liste">
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_html.png" alt="Logo HTML5">
+                            HTML
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_css.png" alt="Logo CSS3">
+                            CSS
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_javascript.png" alt="Logo JavaScript">
+                            Javascript
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_reactjs.png" alt="Logo ReactJS">
+                            ReactJS
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="div-1v4">
+                    <h3>Backend</h3>
+                    <ul class="skill-liste">
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_java.png" alt="Logo Java">
+                            Java
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_spring.png" alt="Logo Spring Boot">
+                            Spring Boot
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_hibernate.png" alt="Logo Hibernate / JPA">
+                            Hibernate / JPA
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_flyway.png" alt="Logo Flyway">
+                            Flyway
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_quarkus.png" alt="Logo Quarkus">
+                            Quarkus
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="div-1v4">
+                    <h3>Database</h3>
+                    <ul class="skill-liste">
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_sonstige.png" alt="Plus-Zeichen">
+                            SQL
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_mongoDB.png" alt="Logo MongoDB">
+                            MongoDB
+                        </li>
+    
+                    </ul>
+                </div>
+
+                <div class="div-1v4">
+                    <h3>Business</h3>
+                    <ul class="skill-liste">
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_sonstige.png" alt="Plus-Zeichen">
+                            CD/CI
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_JUnit.png" alt="Logo JUnit">
+                            JUnit
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_sonstige.png" alt="Plus-Zeichen">
+                            Mockito
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_github.png" alt="Logo GitHub">
+                            GitHub
+                        </li>
+                        <li class="skill-liste-punkt">
+                            <img src="./img/sg_logo_sonstige.png" alt="Plus-Zeichen">
+                            Clean Code
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+
+        <div class="project-box" id="projects">
+            <h2>Projects</h2>
+            <div class="row project-row">
+                <div class="project-text-box div-1v3">
+                    <h3>Projektname</h3>
+                    <p class="project-beschreibung">
+                        Kurzbeschreibung um was es bei dem Projekt geht. So interessant geschrieben, dass man unbedingt mehr erfahren möchte.  <br>
+                        Du willst ja schließlich ein bisschen angeben.
+                    </p>
+                    <a href="#" class="btn btn--border">Zum Projekt</a>
+                    <p  class="project-knownledge">HTML, JavaScript, ReactJS, SQL, Moskito, Clean Code, Liebe, Lachen, Jasmin</p>
+                </div>
+                <div class="project-text-box div-1v3">
+                    <h3>Projektname</h3>
+                    <p class="project-beschreibung">
+                        Kurzbeschreibung um was es bei dem Projekt geht. So interessant geschrieben, dass man unbedingt mehr erfahren möchte.  <br>
+                        Du willst ja schließlich ein bisschen angeben.
+                    </p>
+                    <a href="#" class="btn btn--border">Zum Projekt</a>
+                    <p  class="project-knownledge">HTML, JavaScript, ReactJS, SQL, Moskito, Clean Code, Liebe, Lachen, Jasmin</p>
+                </div>
+                <div class="project-text-box div-1v3">
+                    <h3>Projektname</h3>
+                    <p class="project-beschreibung">
+                        Kurzbeschreibung um was es bei dem Projekt geht. So interessant geschrieben, dass man unbedingt mehr erfahren möchte.  <br>
+                        Du willst ja schließlich ein bisschen angeben.
+                    </p>
+                    <a href="#" class="btn btn--border">Zum Projekt</a>
+                    <p  class="project-knownledge">HTML, JavaScript, ReactJS, SQL, Moskito, Clean Code, Liebe, Lachen, Jasmin</p>
+                </div>
+            </div>
+
+            <div class="row project-row">
+                <div class="project-text-box div-1v3">
+                    <h3>Projektname</h3>
+                    <p class="project-beschreibung">
+                        Kurzbeschreibung um was es bei dem Projekt geht. So interessant geschrieben, dass man unbedingt mehr erfahren möchte.  <br>
+                        Du willst ja schließlich ein bisschen angeben.
+                    </p>
+                    <a href="#" class="btn btn--border">Zum Projekt</a>
+                    <p  class="project-knownledge">HTML, JavaScript, ReactJS, SQL, Moskito, Clean Code, Liebe, Lachen, Jasmin</p>
+                </div>
+                <div class="project-text-box div-1v3">
+                    <h3>Projektname</h3>
+                    <p class="project-beschreibung">
+                        Kurzbeschreibung um was es bei dem Projekt geht. So interessant geschrieben, dass man unbedingt mehr erfahren möchte.  <br>
+                        Du willst ja schließlich ein bisschen angeben.
+                    </p>
+                    <a href="#" class="btn btn--border">Zum Projekt</a>
+                    <p  class="project-knownledge">HTML, JavaScript, ReactJS, SQL, Moskito, Clean Code, Liebe, Lachen, Jasmin</p>
+                </div>
+                <div class="project-text-box div-1v3">
+                    <h3>Projektname</h3>
+                    <p class="project-beschreibung">
+                        Kurzbeschreibung um was es bei dem Projekt geht. So interessant geschrieben, dass man unbedingt mehr erfahren möchte.  <br>
+                        Du willst ja schließlich ein bisschen angeben.
+                    </p>
+                    <a href="#" class="btn btn--border">Zum Projekt</a>
+                    <p  class="project-knownledge">HTML, JavaScript, ReactJS, SQL, Moskito, Clean Code, Liebe, Lachen, Jasmin</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="kontakt-box" id="contact">
+            <h2>Kontaktaufnahme</h2>
+            <div class="row">
+                <div class="kontakt-text div-1v2">
+                    <p>
+                        Interessiert an einer Zusammenarbeit? <br>
+                        Meldet euch gern, ich freu mich von euch zu hören! <br>
+                    </p>    
+                    <p>
+                        Stephan Gärtner <br>
+                        0176 355 03 848 <br>
+                        stephan.gaertner72@outlook.de
+                    </p>
+                    <p class="kontakt-social-media">
+                        <a href="#"><img src="./img/sg_logo_linkedIn.png" alt="Logo LinkedIn Verlinkung zum Social Media Profil"></a>
+                        <a href="#"><img src="./img/sg_logo_github_big.png" alt="Logo GitHub Verlinkung zum GitHub Profil"></a>
+                        <a href="#"><img src="./img/sg_logo_x.png" alt="Logo X Verlinkung zum Social Media Profil"></a>
+                    </p>
+                </div>
+                <div class="kontakt-formular div-1v2">
+                    <form class="formular" action="">
+                        <div class="form-feld form-feld-required form-feld-text form-1v2">
+                            <label for="fname">Vorname*</label>
+                            <input type="text" id="fname" name="fname" value="">
+                        </div>
+                        <div class="form-feld form-feld-required form-feld-text form-1v2">
+                            <label for="lname">Nachname*</label>
+                            <input type="text" id="lname" name="lname" value="">
+                        </div>
+
+                        <div class="form-feld form-feld-required form-feld-text form-1v2">
+                            <label for="mail">Mail*</label>
+                            <input type="text" id="mail" name="mail" value="">
+                        </div>
+                        <div class="form-feld form-feld-text form-1v2">
+                            <label for="phone">Telefonnummer</label>
+                            <input type="text" id="phone" name="phone" value="">
+                        </div>
+                        <div class="form-feld form-feld-required form-feld-textarea u-margin-bottom-mid ">
+                            <label for="message">Nachricht*</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <p class="u-margin-bottom-mid"> Mit dem Absenden der Nachricht seid ihr mit der 
+                            <a href="#">Datenschutzerklärung</a> einverstanden.</p>
+
+                        <input type="submit" value="Absenden" class="btn btn--filled">
+                      </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="#" class="footer-nav-link">Impressum</a>
+            <a href="#" class="footer-nav-link">Datenschutz</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
